@@ -9,12 +9,11 @@ function() {
                         var task_id = li.attr("data-id");
                         app.db.openDoc(task_id, {
                             success : function(doc) {
-                                doc.danielOrder = i;
+                                doc.sort_order = i;
                                 app.db.saveDoc(doc);
                             }
                         });
                     });
-            alert('End');
         }
     });
     $("#sortable").disableSelection();

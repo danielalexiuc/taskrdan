@@ -36,7 +36,7 @@ $.couch.app(function(app) {
   $("#tasks").evently(tasks, app);
 
   // Daniel's stuff
-  $("#daniel").evently(app.ddoc.evently.daniel, app);
+//  $("#daniel").evently(app.ddoc.evently.daniel, app);
 
   $.pathbinder.begin("/");
 });

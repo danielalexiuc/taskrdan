@@ -34,6 +34,12 @@ $.couch.app(function(app) {
   
   $.log(tasks)
   $("#tasks").evently(tasks, app);
+
+   // Daniel's stuff
+    $("#daniel").evently(app.ddoc.evently.daniel, app);
+
+  $("#sortable").sortable();
+  $("#sortable").disableSelection();
   $.pathbinder.begin("/");
 });
 
